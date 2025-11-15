@@ -7,8 +7,8 @@ import csv
 def create_scv():
     categories = "ABCD"
     for i in range(5):
-        with open(f"csv_{i + 1}.csv", "w", newline="") as csvfile:
-            writer = csv.writer(csvfile)
+        with open(f"csv_{i + 1}.csv", "w", newline="") as f:
+            writer = csv.writer(f)
             for j in range(50):
                 writer.writerow([random.choice(categories), random.random()])
     print("5 CSV создано\n")

@@ -1,3 +1,5 @@
 /.venv/
 /.vscode/
 /.idea/
+*.csv
+/Лаб 3/
