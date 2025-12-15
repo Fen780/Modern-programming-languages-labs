@@ -26,7 +26,7 @@ class Translator:
     def translate_line(self, line):
         stripped_line = line.strip()
         
-        for pattern, replacement in self.regex_templates:
+        for pattern, replacement in self.rules:
             stripped_line = re.sub(pattern, replacement, stripped_line)
 
         if stripped_line.startswith("print("):
