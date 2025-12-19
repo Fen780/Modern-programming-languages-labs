@@ -63,7 +63,7 @@ def processing_csv():
         print()
 
     for j, category in enumerate(categories):
-        print(f"Медиана медиан {category}: {overall_medians[j]}, Среднее отклонение медиан {category}: {median_deviations[j]}")
+        print(f"Медиана медиан {category}: {overall_medians[j]}, Стандартное отклонение медиан {category}: {median_deviations[j]}")
     print()
 
 def main():
